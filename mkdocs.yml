@@ -1,0 +1,45 @@
+site_name: llm-chat-tool
+site_url: https://johanneslatzel.github.io/llm-chat-tool/
+repo_url: https://github.com/johanneslatzel/llm-chat-tool
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+nav:
+  - Overview: index.md
+  - Quick Start: quickstart.md
+  - Tools:
+      - Overview: tools/index.md
+      - Defining a tool: tools/defining-tools.md
+      - Registration: tools/registration.md
+      - Tool packages: tools/packages.md
+      - Timed tools: tools/timed-tools.md
+      - Tool hooks: tools/tool-hooks.md
+  - Examples:
+      - Overview: examples/index.md
+      - Executing a tool: examples/executing-tools.md
+      - Typed tools: examples/typed-tools.md
+      - Tool packages: examples/tool-packages.md
+      - Timed tools: examples/timed-tools.md
+  - Architecture: architecture.md
+  - API Reference: api-reference.md
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+plugins:
+  - search
